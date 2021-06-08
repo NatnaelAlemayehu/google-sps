@@ -3,11 +3,20 @@ body, html {
   margin: 0;
 }
 body{
-    background-color: #ebebeb !important;
+    background-color: #212540 !important;
 }
 html{
     scroll-behavior: smooth;
 }
+
+.pinktext{
+    color: #f76a6a;
+}
+
+.whitetext{
+    color: white;
+}
+
 .bg{
       /* The image used */
   background-image: url("./images/spspic.png");
@@ -44,13 +53,16 @@ html{
     margin-right: 20px;
     font-size: 2rem;
 }
-
 .mytitle{
-    border-right: 1px dotted black;
+    border-right: 1px dotted #f76a6a;
 }
 
 #section2{
-     font-family: "lora-regular";
+     font-family: "serif";
+}
+
+.link-text{
+    color: #98ceff !important;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -58,7 +70,7 @@ html{
     font-size: 5rem;
     }
 .contents{
-    margin-left: 120px;
+    margin-left: 150px;
 }
 }
 
