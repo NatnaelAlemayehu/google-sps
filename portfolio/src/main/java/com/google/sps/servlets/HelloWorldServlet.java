@@ -17,7 +17,7 @@ public class HelloWorldServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
    
     response.setContentType("text/html;");
-    String[] messages = {"I love eating meat", "I love drinking wine", "I love to workout"};
+    String[] messages = {"I love eating meat.", " I love drinking wine.", "I love to workout. "};
     String returnjson = getJson(messages);
     
     // Send the JSON as the response
