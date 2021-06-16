@@ -17,7 +17,7 @@ public class FormHandlerServlet extends HttpServlet {
 
     // Print the value so you can see it in the server logs.
     System.out.println("You submitted: " + emailValue + " " + textValue);
-    response.sendRedirect("https://8080-cs-660787154779-default.cs-europe-west1-itbg.cloudshell.dev/");
+    response.sendRedirect("https://nalemayehu-sps-summer21.appspot.com/");
 
     // Write the value to the response so the user can see it.
     //response.getWriter().println("You submitted: " + textValue);
