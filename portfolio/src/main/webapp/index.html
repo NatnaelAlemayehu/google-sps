@@ -1,19 +1,236 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="displayString()">
+
+    <div class="container-fluid bg">
+        <div id="inner">
+            <h5>Hello World!</h5>
+            <h1 class="name">I'm Natnael Alemayehu.</h1>
+            <h3>| Web Developer | Data Analyst |</h3>
+            <br />
+            <a class="btn btn-outline-primary" href="#section2">More about me</a>
+        </div>
     </div>
-  </body>
+    <div class="container" id="section2">
+        <div class="row mt-5 text-center">
+            <h1 class="pinktext" id="aboutme">About me</h1>
+            <ul id="mydetails" class="whitetext"></ul>
+        </div>
+        <div class="row mt-3 text-center">
+            <h5 class="pinktext">Work Experience</h5>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-sm-5 mytitle">
+                <div class="contents whitetext">
+                    <p>Website Development Course Teaching Assistant</p>
+                    <p>Jan 2021 - May 2021</p>
+                </div>
+            </div>
+            <div class="col-sm-5 whitetext">
+                <h5>African Leadership University</h5>
+                <hr>
+                <span>Held office hours for 2 hours/week, and provided feedback for students</span><br>
+                <span>Assessed assignments & projects for 40+ students and give in-depth feedback</span><br>
+                <span>Worked with the facilitator of the course to design course content</span><br>
+                </p>
+            </div>
+        </div>
+        <br>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-5 mytitle">
+                <div class="contents whitetext">
+                    <p>Co-Founder and Technology Lead</p>
+                    <p>June 2019 - Present</p>
+                </div>
+            </div>
+            <div class="col-sm-5 whitetext">
+                <h5>Haleta Tutors</h5>
+                <hr>
+                <p>Co-founded the 1st online platform in Ethiopia that connects parents who look for tutoring services
+                    with top tutors at
+                    affordable prices.</p>
+            </div>
+        </div>
+        <br>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-5 mytitle">
+                <div class="contents whitetext">
+                    <p>Website Developer</p>
+                    <p>May 2020 - August 2020</p>
+                </div>
+            </div>
+            <div class="col-sm-5 whitetext">
+                <h5>EIHR Ethiopia</h5>
+                <hr>
+                <span>Used WordPress and third-party plugins to build the official website</span><br>
+                <span>Integrated Google Analytics and made SEO optimization that increased monthly visitor numbers up by
+                    200% from 100 viewers
+                    in just 2 months</span>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="pinktext">Live Project Demos</h2>
+            <p class="whitetext">This are projects I have worked on in class and beyond class.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="./images/tetris.jpg" alt="Lights" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Tetris game with vanilla Js</h5>
+                        <p class="card-text">Built tetris game using Javascript ES6 in modular components along with a
+                            MYSQL
+                            database for the backend to store players’ information</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://mytetriswebsite.000webhostapp.com/" class="btn btn-primary">Check Project</a>
+                            <small class="text-muted">2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="./images/googlesheet.jpg" alt="Lights" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Analysis on non-communicable disease</h5>
+                        <p class="card-text">Analyzed dataset using pivot tables, graphs, and charts to determine
+                            possible
+                            causes of deaths by non-communicable diseases in Sierra Leone</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://docs.google.com/spreadsheets/d/1KQ3wjMELw9eLDYpqRdGbehHLrPSbBLLdytLvAKlBzK0/edit?usp=sharing" class="btn btn-primary">Check Project</a>
+                            <small class="text-muted">2018</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="./images/haleta.jpg" alt="Lights" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Haleta Tutors Website</h5>
+                        <p class="card-text">Developed Haleta Tutor's website using React Js for front-end and Node Js
+                            for backend and MongoDB for Database</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://www.haletatutors.com" class="btn btn-primary">Check Project</a>
+                            <small class="text-muted">Present</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="./images/figma.png" alt="Lights" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Cardio Workut App Design and Development with flutter</h5>
+                        <p class="card-text">Developed in team of 2 a workout app using flutter. Also worked on the
+                            design.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://www.figma.com/file/XjuYorUuS3DzUVJXu5hg7B/High-Fidelity-Prototype?node-id=0%3A1" class="btn btn-primary">Check Project</a>
+                            <small class="text-muted">2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="./images/eihr.png" alt="Lights" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ethiopian Initiative for Human Rights Website</h5>
+                        <p class="card-text">Built the official website for EIHR using wordpress and installed various
+                            extensions.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://www.eihr.org" class="btn btn-primary">Check Project</a>
+                            <small class="text-muted">2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="./images/ai.png" alt="Lights" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Application of Machine Learning in Diabetes prediction</h5>
+                        <p class="card-text">Developed various models to accurately predicete diabetes.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="https://docs.google.com/document/d/11lF0VYJ493CqrHnQqFpWeyQvW87OaeaxZFR7_FglpL4/edit?usp=sharing" class="btn btn-primary">Check Project</a>
+                            <small class="text-muted">2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">                
+                <div class="col-12 col-md">
+                    <h5 class="pinktext">MY SOCIAL LINKS</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-text" href="#">Instagram</a></li>
+                        <li><a class="link-text" href="#">WhatsApp</a></li>
+                        <li><a class="link-text" href="#">Telegram</a></li>
+                        <li><a class="link-text" href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <h5 class="pinktext">PORTFOLIO LINKS</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-text" href="https://github.com/NatnaelAlemayehu/">Github</a></li>
+                        <li><a class="link-text" href="#">Figma</a></li>
+                        <li><a class="link-text" href="https://www.linkedin.com/in/natnael-alemayehu/">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <form class="whitetext" action="/form-handler" method="POST">
+                        <h5 class="pinktext">HIT ME UP</h5>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Your Email Address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>     
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Your message</label>
+                            <textarea class="form-control" name="emailmessage" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>                      
+                        <br />  
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
