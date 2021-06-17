@@ -8,6 +8,15 @@ async function displayString(){
     }  
 }
 
+async function getEmails(){
+    const responseFromServer = await fetch('/list-tasks');   
+    const response = await responseFromServer.json();     
+    const myEmails = document.getElementById('myemails'); 
+    for (i =0; i < response.length; i ++){
+        myEmails.appendChild(addItem(response[i].emailaddress + " " + response[i].emailmessage));
+    }     
+}
+
 function addItem(message) {
   const liElement = document.createElement('li');
   liElement.innerText = message;
