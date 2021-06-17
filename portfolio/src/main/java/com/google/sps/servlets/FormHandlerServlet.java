@@ -35,6 +35,6 @@ public class FormHandlerServlet extends HttpServlet {
     datastore.put(emailEntity);
 
     System.out.println("You submitted: " + emailValue + " " + textValue);
-    response.sendRedirect("https://nalemayehu-sps-summer21.appspot.com/");
+    response.sendRedirect("https://nalemayehu-sps-summer21.appspot.com");
   }
 }
